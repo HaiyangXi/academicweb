@@ -1,0 +1,75 @@
+/* ======================================================
+   Unified Circle Buttons
+   + 主课程
+   + 子课程
+   − 删除 / 提升
+====================================================== */
+
+.title-add,
+.promote-main,
+.add-sub,
+.sub-del {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.25);
+  border: 1px solid rgba(255,255,255,0.45);
+
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  cursor: pointer;
+  user-select: none;
+
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover 统一效果 */
+.title-add:hover,
+.promote-main:hover,
+.add-sub:hover,
+.sub-del:hover {
+  background: rgba(255,255,255,0.45);
+  transform: scale(1.1);
+}
+
+/* Focus 去掉默认蓝框 */
+.title-add:focus,
+.promote-main:focus,
+.add-sub:focus,
+.sub-del:focus {
+  outline: none;
+}
+
+/* 删除按钮稍小，不抢视觉 */
+.sub-del {
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+}
+.title-add,
+.add-sub,
+.sub-del,
+.del-main {
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background:rgba(255,255,255,.25);
+  border:1px solid rgba(255,255,255,.45);
+  color:#fff;
+  font-size:14px;
+  font-weight:600;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  transition:.2s ease;
+}
