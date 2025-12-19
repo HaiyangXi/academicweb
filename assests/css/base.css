@@ -1,0 +1,108 @@
+:root{
+  --blue:#6ac7ca;
+  --blue2:#8dd9dc;
+  --green:#b7e8d6;
+  --cream:#f8f1e6;
+  --text:#222;
+  --shadow:0 8px 24px rgba(0,0,0,.15);
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:"Poppins","Noto Sans SC",sans-serif;
+  background:var(--cream);
+  color:var(--text);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+/* ======================================================
+   Home / Cover Page
+====================================================== */
+
+.home-section{
+  /* 不写 display！交给 section.active 控制 */
+}
+
+/* 顶部标题 */
+.home-header{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.home-header h1{
+  font-size:36px;
+  font-weight:700;
+  color:var(--blue);
+  margin-bottom:10px;
+}
+
+.home-header p{
+  font-size:16px;
+  color:#555;
+}
+
+/* 中间白色泡泡 */
+.social-section{
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  gap:60px;
+
+  margin:0 auto;
+  padding:40px 60px;
+  width:80%;
+
+  background:#fff;
+  border-radius:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,.1);
+}
+
+/* 左侧社交栏 */
+.social-left{
+  flex:0 0 200px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.social-left h3{
+  color:var(--blue);
+}
+
+.social-left a{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  padding:10px 14px;
+  border-radius:10px;
+
+  background:linear-gradient(145deg,var(--blue2),var(--green));
+  color:#fff;
+  font-weight:600;
+  text-decoration:none;
+
+  box-shadow:0 3px 10px rgba(0,0,0,.15);
+  transition:.25s ease;
+}
+
+.social-left a:hover{
+  transform:translateY(-3px) scale(1.04);
+  background:var(--green);
+  color:#000;
+}
+
+/* 右侧介绍 */
+.social-intro{
+  flex:1;
+  font-size:15px;
+  line-height:1.8;
+  color:#333;
+}
+
+.social-intro h3{
+  color:var(--blue);
+  margin-bottom:10px;
+}

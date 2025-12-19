@@ -1,0 +1,59 @@
+.top-logo{
+  background:#fff;
+  text-align:center;
+  padding:18px 0;
+  box-shadow:0 2px 8px rgba(0,0,0,.05);
+}
+
+.navbar{
+  display:flex;
+  align-items:center;
+  background:var(--blue);
+  padding:0 16px;
+}
+
+.navbar a{
+  color:#fff;
+  padding:16px 20px;
+  font-weight:600;
+  text-decoration:none;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  background:var(--green);
+  color:#000;
+}
+
+.main{
+  flex:1;
+  display:flex;
+}
+
+.side-menu{
+  width:220px;
+  background:#fff;
+  padding:20px 0;
+  position:sticky;
+  top:0;
+  height:100vh;
+}
+
+.side-menu a{
+  display:block;
+  padding:16px 20px;
+  font-weight:600;
+  text-decoration:none;
+  color:var(--text);
+}
+
+.side-menu a.active,
+.side-menu a:hover{
+  background:var(--green);
+}
+
+.content{
+  flex:1;
+  padding:40px;
+  overflow:auto;
+}
